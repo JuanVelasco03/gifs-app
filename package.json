@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del docs",
-    "copy:dist": "copyfiles dist/bases/* ./docs -f",
+    "copy:dist": "copyfiles dist/gifs-app/* ./docs -f",
     "build:prod": "npm run delete:docs && npm run build:href && npm run copy:dist"
   },
   "private": true,
@@ -22,6 +22,8 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "copyfiles": "^2.4.1",
+    "del-cli": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
