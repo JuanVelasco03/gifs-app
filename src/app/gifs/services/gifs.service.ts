@@ -48,6 +48,11 @@ export class GifsService {
     this.searchTag(this._tagsHistory[0])
   }
 
+  deleteTag (tag: string): void {
+    this._tagsHistory = this._tagsHistory.filter(oldTag => oldTag !== tag)
+    this.saveLocalStorage()
+  }
+
   searchTag(tag: string): void {
     if (tag.length === 0) return;
 

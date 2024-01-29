@@ -18,6 +18,10 @@ export class SidebarComponent {
     this.gifsService.searchTag(tag)
   }
 
+  deleteTag (tag: string){
+    this.gifsService.deleteTag(tag)
+  }
+
 
 
 
